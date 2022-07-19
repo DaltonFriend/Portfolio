@@ -25,7 +25,7 @@ padding: 80px 100px 0px;
     display: flex;
 
     font-family:  -apple-system, Open Sans;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 28px;
     color: #333333;
@@ -41,12 +41,52 @@ padding: 80px 100px 0px;
    font-family:  -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: #333333;
 }
 
 
 
+.status {
+
+  /* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+
+gap: 24px;
+
+}
+
+
+.status-alerts { 
+
+font-family: -apple-system, Open Sans;
+font-weight: 600;
+font-style: normal;
+font-size: 12px;
+color: #333333;
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding:8px;
+gap: 8px;
+
+
+background: #F7F7F7;
+/*
+border: 1px solid #E5E5E5;
+*/
+border-radius: 8px;
+
+}
 
 
 .intro {
@@ -58,6 +98,8 @@ padding: 80px 700px 80px 100px;
 
 }
 
+
+/*
 .introbox {
 
    border-radius: 16px;
@@ -65,11 +107,11 @@ padding: 80px 700px 80px 100px;
   padding: 72px; 
  
 }
-
+*/
 
 .subtitle {
    font-family: -apple-system, Open Sans;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 32px;
     line-height: 48px;
@@ -80,11 +122,19 @@ padding: 80px 700px 80px 100px;
   font-family: -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     color: #333333;
+
+  
+
+
+
 }
 
+b {
+    font-weight: 500;
+}
 
 img {
   
@@ -92,6 +142,163 @@ img {
   transform: translateY(18%);
   
 
+width: 140.33px;
+height: 69px;
+
+}
+
+.alerts {
+
+ font-family: -apple-system, Open Sans;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    color: #333333;
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding:8px;
+gap: 8px;
+
+
+
+border-radius: 8px;
+
+background: #F7F7F7;
+/*
+border: 1px solid #666666;
+*/
+
+
+
+}
+
+
+
+.Portfolio {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 100px 20px 100px;
+
+  background: #F5F6FA;
+
+}
+
+.space {
+  padding-bottom: 80px;
+}
+
+.University {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+
+}
+
+.tab {
+  padding-right: 80px;
+}
+
+.Published {
+  font-family: -apple-system, Open Sans;
+     font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #333333;
+    display: flex;
+   align-items: center;
+
+border-radius: 8px;
+padding:  24px;
+  background: #fff;
+
+}
+
+.box1 {
+  /* Auto layout */
+
+position: static;
+width: 320px;
+height: 240px;
+left: 0px;
+top: 0px;
+
+border: 2px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 12px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 20px 0px;
+}
+
+
+.title {
+  font-family: -apple-system, Open Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.date {
+  font-family: -apple-system, Open Sans;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #666666;
+}
+
+.titledate {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+padding-bottom: 16px;
+
+position: static;
+width: 320px;
+height: 27px;
+left: 0px;
+top: 0px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.copydate {
+  conta
+}
+
+
+.describtion {
+
+   font-family: -apple-system, Open Sans;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: #333333;
+    width: 320px;
 }
 
 
@@ -108,10 +315,10 @@ padding: 80px 700px 80px 100px;
 
 .thank-you {
     font-family: -apple-system, Open Sans;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 48px;
     color: #333333;
     padding-bottom: 16px;
 }
@@ -120,7 +327,7 @@ padding: 80px 700px 80px 100px;
    font-family: -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: #333333;
 }
 
@@ -141,7 +348,7 @@ padding: 80px 100px;
    font-family: -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .social {
@@ -183,7 +390,7 @@ a:link {
 
 
 
-@media all and (min-width: 1601px) and (max-width: 2000px) {
+@media all and (min-width: 1451px) and (max-width: 2000px) {
 
 
 
@@ -207,11 +414,11 @@ padding: 80px 700px 80px 100px;
 }
 
 .thank-you {
-    font-family: -apple-system, Open Sans;
-    font-weight: 300;
+  font-family: -apple-system, Open Sans;
+    font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 48px;
     color: #333333;
     padding-bottom: 16px;
 }
@@ -220,7 +427,7 @@ padding: 80px 700px 80px 100px;
    font-family: -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: #333333;
 }
 
@@ -238,7 +445,7 @@ padding: 80px 100px;
 
 
 
-@media all and (min-width: 1112px) and (max-width: 1600px) {
+@media all and (min-width: 1112px) and (max-width: 1500px) {
 
 
 .name {
@@ -261,7 +468,7 @@ padding: 80px 100px;
    font-family:  -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     color: #333333;
 }
 
@@ -289,8 +496,8 @@ padding: 80px 400px 80px 100px;
   font-family: -apple-system, Open Sans;
     font-weight: 300;
     font-style: normal;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     color: #333333;
 }
 
@@ -305,10 +512,10 @@ padding: 80px 400px 80px 100px;
 
 .thank-you {
     font-family: -apple-system, Open Sans;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 48px;
     color: #333333;
     padding-bottom: 16px;
 }
@@ -409,7 +616,7 @@ padding: 80px 200px 80px 100px;
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 28px;
     color: #333333;
 }
 
@@ -424,10 +631,10 @@ padding: 80px 200px 80px 100px;
 
 .thank-you {
     font-family: -apple-system, Open Sans;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 48px;
     color: #333333;
     padding-bottom: 16px;
 }
@@ -500,6 +707,7 @@ padding: 100px;
 
 }
 
+/*
 .introbox {
 
    border-radius: 16px;
@@ -507,6 +715,7 @@ padding: 100px;
   padding: 72px; 
  
 }
+*/
 
 
 .subtitle {
@@ -523,7 +732,7 @@ padding: 100px;
     font-weight: 300;
     font-style: normal;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 28px;
     color: #333333;
 }
 
@@ -547,10 +756,10 @@ padding: 100px;
 
 .thank-you {
     font-family: -apple-system, Open Sans;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 48px;
     color: #333333;
     padding-bottom: 16px;
 }
@@ -611,8 +820,10 @@ padding: 20px;
    
     }
 
+
+
     .introbox {
-      padding: 40px; 
+      padding-top: 20px; 
 
     }
 
@@ -630,7 +841,7 @@ padding: 20px;
         font-weight: 300;
         font-style: normal;
         font-size: 16px;
-        line-height: 32px;
+        line-height: 24px;
         color: #333333;
     }
 
@@ -643,10 +854,10 @@ padding: 20px;
 
     .thank-you {
          font-family: -apple-system, Open Sans;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 28px;
         color: #333333;
     }
 
@@ -665,7 +876,29 @@ padding: 20px;
 
 }
 
+
+.Portfolio {
+  padding: 20px;
+
+  
+}
     
+
+    .Published {
+        font-size: 20px;
+    }
+
+
+img {
+  
+  transform: translateX(20%);
+  transform: translateY(18%);
+  
+
+width: 101.69px;
+height: 50px;
+
+}
 
 
 
