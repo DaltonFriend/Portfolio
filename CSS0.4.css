@@ -266,6 +266,11 @@ margin-inline-end: 0px;
     
 }
 
+.right {
+  cursor: url("Hover.cur"),pointer; 
+
+}
+
 
 .social a {
   color: #333333;
