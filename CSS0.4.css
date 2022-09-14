@@ -274,6 +274,7 @@ margin-inline-end: 0px;
 }
 
 .social a:hover {
+  cursor: url("Hover.cur"),pointer; 
   color:  #2D64BC;
 }
 
