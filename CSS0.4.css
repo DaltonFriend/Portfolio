@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
+
+
+
   /* Header */
 
 
@@ -125,10 +128,11 @@ padding: 100px 100px 100px 100px;
     }
 
 
-.leftcopy:hover {
-  text-decoration: underline;
-  color: #FF4F00;
-}
+    .Card:hover .leftcopy {
+      color: #FF4F00;
+    }
+
+
 
 
 .imagecontainer {
