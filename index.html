@@ -1,329 +1,253 @@
 <!DOCTYPE html>
 
 <html lang="en-GB">
-<head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5LF47D5W38"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5LF47D5W38');
-</script>
-
-
-
-
-    <meta charset="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dalton Friend</title>
-
-    <meta name="description" content="Dalton Friend, UX/UI Designer based in London">
-    <meta name="author" content="Dalton Friend">
-    <link rel="apple-touch-icon" sizes="180x180" href="/df.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/df.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/df.png">
-    <link rel="icon" type="image/png" href="df.png">
-
-<link rel="stylesheet" href="CSS0.4.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-<style>
-      html {
-          cursor: url("Cursor.cur"), auto;
-          color: #000000;
-
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5LF47D5W38"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-  </style>
+      gtag("js", new Date());
 
+      gtag("config", "G-5LF47D5W38");
+    </script>
 
-</head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>Dalton Friend</title>
+    <meta
+      name="description"
+      content="Dalton Friend, Product Designer based in London"
+    />
+    <meta name="author" content="Dalton Friend" />
+    <link rel="canonical" href="https://daltonfriend.co.uk" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="General/df.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="General/df.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="General/df.svg" />
+    <link rel="icon" type="image/png" href="General/df.svg" />
 
-<body onload="startTime()">
+    <!-- Preload CSS -->
+    <link rel="preload" href="CSS.css" as="style" />
 
+    <!-- CSS file -->
+    <link rel="stylesheet" href="CSS.css" />
 
+    <!-- Preload JS -->
+    <link rel="preload" href="javascript.js" as="script" />
 
-            <header class="header"> 
-               <div class="wrapper">
+    <!-- Reference JS normally -->
+    <script src="javascript.js"></script>
 
-                 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dalton Friend" />
+    <meta property="og:description" content="Product Designer" />
+    <meta property="og:image" content="placeholder" />
+    <meta property="og:url" content="https://daltonfriend.co.uk" />
+    <meta property="og:site_name" content="Dalton Friend" />
 
-                  <div class="clock"> 
-                   
-                    <div id="time"></div> 
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@_DaltonFriend" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dalton Friend" />
+    <meta name="twitter:description" content="Product Designer" />
+    <meta name="twitter:image" content="placeholder" />
 
-                            <script>
-                            function startTime() {
-                              const today = new Date();
-                              let h = today.getHours();
-                              let m = today.getMinutes();
-                              let s = today.getSeconds();
-                              m = checkTime(m);
-                              s = checkTime(s);
-                              document.getElementById('time').innerHTML =  h + ":" + m + ":" + s;
-                              setTimeout(startTime, 1000);
-                            }
+    <!-- LinkedIn -->
+    <meta property="linkedin:title" content="Dalton Friend" />
+    <meta property="linkedin:image" content="placeholder" />
 
-                            function checkTime(i) {
-                              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                              return i;
-                            }
-                            </script>
-               
-                      </div>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./javascript.js"></script>
+  </head>
 
-                    </div>
+  <body onload="startTime()">
+    <div id="circle"></div>
 
-               </header>
+    <header class="header" aria-labelledby="clock" data-aos="slide-up">
+      <div class="wrapper">
+        <div class="header_clock" role="time">
+          <time id="time"></time>
+        </div>
 
+        <div class="social">
+          <div class="social_container">
+            <a
+              href="https://twitter.com/_DaltonFriend"
+              aria-label="Link to my Twitter profile"
+              title="My Twitter profile"
+            >
+              <h5>&#120143;</h5>
+            </a>
 
+            <!-- social hover -->
+            <div class="social_tooltip">
+              <div class="social_circle">
+                <img src="./General/Profile.png" alt="" />
+              </div>
 
-
-
-
-
-
-               <!-- Introduction paragraph --> 
-
-
-
-              <div class="intro">
-
-
-                <div class="Name"> Dalton Friend </div>
-                <div class="subtitle"> UX/UI Designer </div>
-                   
-                <br><br>
-                 
-                <div class="copy">
-
-                 <p>I am a UX/UI Designer based in London. I specialise in user-centred design and product development and enjoy designing my own apps and learning engineering processes as a hobby. </p>
-
-                
-               <p> I currently work at Cherry to bring new technology and an improved user experience to patients and healthcare professionals around the world. </p>
-
-               <p> My time is split between leading projects, mentoring, conducting user research, creating design systems, and designing everything in-between cross-platform apps and products. </p>
-
+              <div class="social_content">
+                <div class="social_text">_DaltonFriend</div>
+                <div class="social_images">
+                  <img src="./General/Tick.png" alt="" />
+                  <img src="./General/Adakitwitter.png" alt="" />
                 </div>
-                </div>
-
-
-
-
-
-
-                <!-- Portfolio --> 
-
-                 <!-- Experience --> 
-                                                    
-                 <div class="portfolio" data-aos="fade-in">
-
-                <div class="Name"> Experience  </div>
-
-
-
-                  
-                      <div class="Card">
-                        <a style="text-decoration: none;  cursor: url(Hover.cur),pointer; ">
-
-                          <div class="imagecontainer">
-
-                           <img src="Cherrycard.svg" object-fit: cover;>  
-
-                         </div>
-
-                           <div class="copy">
-                
-                                    <div class="titledate">
-
-                                           <div class="leftcopy"> Cherry </div>
-                                        <div class="rightcopy" style="color: #666666;"> 2021-Present </div>
-                                        </div>
-
-                                    <div class="copy" style="color: #666666;"> 
-                                      A leading healthcare design agency.</div>
-
-
-                                                </div>
-                                              </div>
-                                              </a>
-                                        </div>
-                                      
-
-              
-                                                     
-
-                 <!-- University --> 
-                                                    
-                 <div class="portfolio" data-aos="fade-in">
-
-                <div class="Name"> University  </div>
-
-                  <div class="stack">
-
-                        
-
-                        <div class="Card">
-                           <a style="text-decoration: none;  cursor: url(Hover.cur),pointer; ">
-                          <div class="imagecontainer">
-                           <img src="temperature.png" object-fit: cover;>  
-                         </div>
-                           <div class="copy">
-                                    <div class="titledate">
-                                           <div class="leftcopy"> Temperature </div>
-                                        <div class="rightcopy" style="color: #666666;"> 2019-2020 </div>
-                                        </div>
-                                    <div class="copy" style="color: #666666;"> 
-                                      Temperature is a non-contact digital thermometer for human use.</div>
-                                                </div>
-                                              </a>
-                                              </div>
-
-
-
-                          <div class="Card">
-                             <a style="text-decoration: none;  cursor: url(Hover.cur),pointer; ">
-                          <div class="imagecontainer">
-                           <img src="automotive.png" object-fit: cover;>  
-                         </div>
-                           <div class="copy">
-                                    <div class="titledate">
-                                           <div class="leftcopy"> Automotive HMI </div>
-                                        <div class="rightcopy" style="color: #666666;"> 2019-2020 </div>
-                                        </div>
-                                    <div class="copy" style="color: #666666;"> 
-                                      Reflecting on the connectivity of native app design and the intergrated automotive experience.</div>
-                                                </div>
-                                              </a>
-                                              </div>
-
-
-
-                          <div class="Card">
-                             <a style="text-decoration: none;  cursor: url(Hover.cur),pointer; ">
-                          <div class="imagecontainer">
-                           <img src="dandad.png" object-fit: cover;>  
-                         </div>
-                           <div class="copy">
-                                    <div class="titledate">
-                                           <div class="leftcopy"> D&AD New Blood  </div>
-                                        <div class="rightcopy" style="color: #666666;"> 2019-2020 </div>
-                                        </div>
-                                    <div class="copy" style="color: #666666;"> 
-                                      BBC AR is a multisensory space combining the extensive archives of the BBC together with AR, to create a whole new interactive experience of the world.</div>
-                                                </div>
-                                              </a>
-                                              </div>
-
-
-                                        </div>
-                                      </div>
-
-
-
-                       
-
-
-                  <!-- Thank you for reading section --> 
-
-
-
-
-                  <div class="bye" data-aos="fade-in">
-
-                    <div class="thank-you">
-
-                 Thank you for reading. If you would like to discuss more, share feedback, or ask any questions, please get in touch. </div>
-
-                 <br>
-
-                 <div class="copy">
-
-                     Contact me on Linkedin for access to my CV and portfolio of work. 
-
-                    </div>
-
-
-                  </div>
-
-
-
-
-
-
-                   <!-- Footer --> 
-
-
-
-                  <header class="Footer"> 
-                    
-                      <div class="firstline">
-
-                      <div class="left">
-                       <div class="copy">
-                      Design and Development by Dalton Friend 
-                       </div>
-                     </div>
-
-                      <div class="right">
-                        <div class="social">
-
-                        <a href="https://uk.linkedin.com/in/daltonfriend">Linkedin</a>
-                         </div>
-                       </div>
-                        </div>
-
-            
-
-
-               <div class="secondline">
-
-                 <div class="Footnote">
-                <p> This website is set in Open Sans by Steve Matteson from Google. All other content on this website is produced by and copyright 2022 by Dalton Friend. All assets are hosted by Netlify. Stats are tracked using Google Analytics. </p>
-
-                  </div>
-                  </div>
-
-                  <div class="2line">
-
-                  <div class="Footnote">
-                  <p> Version 0.4 </p>
-
-                  </div>
-                  </div>
-
-
-               </header>
-
-             
-              
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-   AOS.init({
-        duration: 3000,
+              </div>
+            </div>
+
+            <!--  -->
+          </div>
+
+          <div class="social_container">
+            <a
+              href="https://uk.linkedin.com/in/daltonfriend"
+              aria-label="Link to my LinkedIn profile"
+              title="My LinkedIn profile"
+            >
+              <h5>LinkedIn</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content area -->
+
+    <section
+      class="intro"
+      role="region"
+      aria-labelledby="intro-title"
+      data-aos="slide-up"
+    >
+      <div class="intro_container">
+        <div class="intro_title">
+          <h1 class="black">Dalton Friend</h1>
+          <h1 class="dark-grey">Product Designer</h1>
+        </div>
+      </div>
+
+      <div class="intro_content">
+        <div class="container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <!-- 24 boxes -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 400,
         once: true,
       });
-  </script>
-
-
-</body>
-
-
+    </script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
