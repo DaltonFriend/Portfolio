@@ -258,14 +258,20 @@ a:link {
   color: var(--blue);
 }
 
-/* Hide the tooltip by default */
-.social_container:hover .social_tooltip {
-  visibility: visible;
+.social_container {
   position: relative;
-  display: inline-block;
 }
-*/ .social_tooltip {
-  display: inline-flex;
+
+.social_container:hover .social_tooltip {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 50%; /* Center the tooltip horizontally */
+  transform: translateX(-50%); /* Center the tooltip horizontally */
+}
+
+.social_tooltip {
+  display: none;
   padding: 16px 40px;
   flex-direction: column;
   justify-content: center;
@@ -273,7 +279,27 @@ a:link {
   gap: 8px;
   border: 1px solid var(--mid-grey);
   background: var(--white);
-  visibility: hidden;
+  max-width: 200px; /* Adjust this to your preference */
+  white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+/* Ensure the tooltip doesn't fall off the viewport */
+.social_container:hover .social_tooltip {
+  right: auto;
+  bottom: auto;
+}
+
+/* Align the tooltip to the right if it's too close to the left edge of the viewport */
+.social_container:hover .social_tooltip.left {
+  left: auto;
+  right: 0;
+  transform: translateX(0);
+}
+
+/* Align the tooltip to the bottom if it's too close to the top edge of the viewport */
+.social_container:hover .social_tooltip.top {
+  top: auto;
+  bottom: 100%;
 }
 
 .social_images {
@@ -296,6 +322,7 @@ a:link {
   justify-content: center;
   align-items: center;
   gap: 6px;
+  margin: 0 auto; /* Center horizontally */
 }
 
 img {
