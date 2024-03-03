@@ -81,6 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
       isHovered = false;
     }
   }
+
+  // Cursor functionality (Conditionally disabled on mobile)
+if (window.innerWidth > 844) { /* Check for screen width */
+// Add all the event listeners and functions for cursor behavior here
+}
 });
 
 // mouseout cursor effects
