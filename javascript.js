@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const items = document.querySelectorAll(
-    ".social_container, .intro_content, .box"
+    " img, video, .social_container, button"
   );
 
   items.forEach((item) => {
@@ -101,28 +101,4 @@ document.addEventListener("mouseover", () => {
   circle.style.opacity = 1;
 });
 
-// Disable scrolling
-document.body.style.overflow = "hidden";
-
-// Re-enable scrolling
-document.body.style.overflow = "auto";
-
-document.ontouchmove = function (event) {
-  event.preventDefault();
-};
-
-const socialContainer = document.querySelector(".social_container");
-const socialTooltip = document.querySelector(".social_tooltip");
-
-socialContainer.addEventListener("mousemove", (e) => {
-  socialTooltip.style.left = e.clientX + "px";
-  socialTooltip.style.top = e.clientY + "px";
-});
-
-socialContainer.addEventListener("mouseleave", () => {
-  socialTooltip.style.display = "none";
-});
-
-socialContainer.addEventListener("mouseenter", () => {
-  socialTooltip.style.display = "block";
-});
+// Wobble
