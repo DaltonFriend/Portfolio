@@ -416,6 +416,10 @@ a:link {
 @media all and (min-width: 300px) and (max-width: 844px) {
   /* Introduction paragraph */
 
+  #circle {
+display: none;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
