@@ -263,7 +263,7 @@ button {
 .profile_pictures {
   width: 48px;
   height: 48px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .image_only {
