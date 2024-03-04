@@ -245,18 +245,25 @@ button {
 
 .company_logo {
   display: flex;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+
 }
 
 .created_by_profile {
   display: flex;
-  width: 48px;
-  height: 48px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 6px;
-  border-radius: 60px;
   object-fit: cover;
+}
+
+.profile_pictures {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .image_only {
@@ -482,7 +489,7 @@ visibility: hidden;
     height: auto;
     object-fit: cover;
   }
-
+  
   .content_container {
     display: flex;
     flex-direction: column;
