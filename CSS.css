@@ -253,9 +253,10 @@ button {
   100% { transform: translateX(0%); }
 }
 
-#ndaButton:hover {
+#ndaButton:hover, #ndaButton.animate {
   animation: wobble 1.0s ease;
 }
+
 
  
 
