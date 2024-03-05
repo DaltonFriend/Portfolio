@@ -257,18 +257,11 @@ button {
   animation: wobble 1.0s ease;
 }
 
-#logo_only:hover {
-  animation: wobble 1.0s ease;
-}
- 
-
-
 .company_logo {
   display: flex;
   width: 80px;
   height: 80px;
   object-fit: cover;
-
 }
 
 .created_by_profile {
@@ -299,6 +292,16 @@ button {
   height: 520px;
   object-fit: cover;
 }
+
+.logo_only {
+  transition: transform 0.3s ease; /* Smooth transition for transform property */
+  display: inline-block; /* Ensures transform applies as expected */
+}
+
+.logo_only:hover {
+  transform: scale(1.01); /* Slightly enlarges the image */
+}
+
 
 .content_container {
   display: flex;

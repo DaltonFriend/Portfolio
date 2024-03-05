@@ -108,25 +108,11 @@ document.addEventListener("mouseover", () => {
 
 // Wobble
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  const button = document.getElementById("ndaButton");
 
-  button.addEventListener("click", function() {
-      // Remove the class to reset the animation
-      this.classList.remove("animate");
 
-      // Force a reflow
-      void this.offsetWidth;
 
-      // Re-add the class to start the animation
-      this.classList.add("animate");
-  });
 
-  // Listen for the end of the animation, then remove the 'animate' class
-  // This ensures the class is ready to be added again for the next click
-  button.addEventListener('animationend', () => {
-      button.classList.remove("animate");
-  });
-});
+
+
 
 
