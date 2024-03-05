@@ -286,6 +286,15 @@ button {
   object-fit: cover;
 }
 
+.image_only {
+  transition: transform 0.3s ease; /* Smooth transition for transform property */
+  display: inline-block; /* Ensures transform applies as expected */
+}
+
+.image_only:hover {
+  transform: scale(1.01); /* Slightly enlarges the image */
+}
+
 .logo_only {
   border-radius: 40px;
   max-width: 100%;
