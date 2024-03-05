@@ -108,20 +108,25 @@ document.addEventListener("mouseover", () => {
 
 // Wobble
 
-document.getElementById("ndaButton").addEventListener("click", function() {
-  // Remove the class if it exists
-  this.classList.remove("animate");
+document.addEventListener('DOMContentLoaded', (event) => {
+  const button = document.getElementById("ndaButton");
 
-  // Trigger reflow to ensure the class removal is processed
-  void this.offsetWidth;
+  button.addEventListener("click", function() {
+      // Remove the class to reset the animation
+      this.classList.remove("animate");
 
-  // Re-add the class to trigger the animation
-  this.classList.add("animate");
+      // Force a reflow
+      void this.offsetWidth;
 
-  // Clean up by removing the class after the animation ends to allow it to be restarted
-  const button = this; // Reference 'this' for use in the callback
-  button.addEventListener('animationend', function() {
-    button.classList.remove("animate");
-  }, {once: true}); // Use the {once: true} option to automatically remove the listener after it fires
+      // Re-add the class to start the animation
+      this.classList.add("animate");
+  });
+
+  // Listen for the end of the animation, then remove the 'animate' class
+  // This ensures the class is ready to be added again for the next click
+  button.addEventListener('animationend', () => {
+      button.classList.remove("animate");
+  });
 });
+
 

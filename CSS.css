@@ -257,7 +257,9 @@ button {
   animation: wobble 1.0s ease;
 }
 
-
+#logo_only:hover {
+  animation: wobble 1.0s ease;
+}
  
 
 
