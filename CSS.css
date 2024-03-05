@@ -180,17 +180,26 @@ p.dark-grey {
 
 /* Header */
 
+.header_main {
+  padding-top: 160px; /* Adjust this value to match your header's height */
+}
+
 .header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 80px 100px 0px;
+  padding: 60px 100px 60px;
+  width: calc(100% - 200px); /* Adjust for 100px padding on each side */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the header is above other content */
+  backdrop-filter: invert(1%) blur(10px);
 }
 
 .header_container {
   width: 100%;
   position: relative;
-  margin: 30px 0;
 }
 
 .header_clock {
@@ -471,8 +480,8 @@ visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 20px 0px;
-
+    padding: 20px 20px;
+    width: calc(100% - 40px); /* Adjust for 100px padding on each side */
   }
 
   .header_container {
