@@ -116,3 +116,19 @@ document.addEventListener("mouseover", () => {
 
 
 
+document.getElementById('linkedin-profile').addEventListener('click', function(e) {
+  // Try to open the LinkedIn app.
+  e.preventDefault(); // Prevent the link from opening in a new tab immediately.
+  
+  var attempted = false;
+
+  setTimeout(function () {
+    if (!attempted) {
+      // If the app didn't open, use window.open to respect the target="_blank" behavior.
+      window.open('https://uk.linkedin.com/in/daltonfriend', '_blank');
+    }
+  }, 25); // Short delay before opening the link in a new tab as a fallback.
+
+  window.location = 'linkedin://in/daltonfriend'; // Attempt to open the LinkedIn profile in the app.
+  attempted = true;
+});
