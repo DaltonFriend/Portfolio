@@ -267,6 +267,10 @@ button {
   animation: wobble 1.0s ease;
 }
 
+button:hover {
+  color: var(--black);
+}
+
 .company_logo {
   display: flex;
   width: 80px;
