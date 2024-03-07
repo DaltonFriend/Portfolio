@@ -106,15 +106,7 @@ document.addEventListener("mouseover", () => {
   circle.style.opacity = 1;
 });
 
-// Wobble
-
-
-
-
-
-
-
-
+// linkedIn
 
 document.getElementById('linkedin-profile').addEventListener('click', function(e) {
   // Try to open the LinkedIn app.
@@ -132,3 +124,17 @@ document.getElementById('linkedin-profile').addEventListener('click', function(e
   window.location = 'linkedin://in/daltonfriend'; // Attempt to open the LinkedIn profile in the app.
   attempted = true;
 });
+
+
+// Wobble
+
+
+
+
+
+const image = document.getElementById("logo_only");
+
+image.addEventListener("touchstart", () => {
+  image.classList.add("animate"); // Use "animate" instead of "wobble" for specificity
+});
+
