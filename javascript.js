@@ -134,7 +134,13 @@ document.getElementById('linkedin-profile').addEventListener('click', function(e
 
 const image = document.getElementById("logo_only");
 
-image.addEventListener("touchstart", () => {
-  image.classList.add("animate"); // Use "animate" instead of "wobble" for specificity
+image.addEventListener("click", () => {
+  if (!image.classList.contains("animate")) {
+    image.classList.add("animate");
+  }
+});
+
+image.addEventListener("animationend", () => {
+  image.classList.remove("animate");
 });
 
