@@ -144,3 +144,20 @@ image.addEventListener("animationend", () => {
   image.classList.remove("animate");
 });
 
+// Wobble nda
+
+document.getElementById('ndaButton').addEventListener('click', function(e) {
+  const button = this;
+
+  // Immediately prevent any default action.
+  e.preventDefault();
+
+  // Remove the 'animate' class to reset the animation.
+  button.classList.remove('animate');
+
+  // Force reflow. This is a trick to restart an animation by causing a reflow.
+  void button.offsetWidth;
+
+  // Re-add the 'animate' class after a short delay to ensure it triggers the animation.
+  setTimeout(() => button.classList.add('animate'), 10);
+});
