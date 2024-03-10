@@ -263,18 +263,12 @@ button {
   100% { transform: translateX(0%); }
 }
 
-#ndaButton:hover, #ndaButton:focus, #ndaButton.animate {
+#ndaButton:hover, #ndaButton.animate {
   animation: wobble 1.0s ease;
 }
 
-/* Adjustments for mobile hover state issue */
-#ndaButton:active {
-  background: var(--warm-grey); /* Optional: Change if you want a different background on active */
-  color: var(--dark-grey); /* Reset to original color or to a specified active state */
-}
-
-button:hover, button:focus {
-  color: var(--black); /* Ensure color change on hover and focus for better UI feedback */
+button:hover {
+  color: var(--black);
 }
 
 .company_logo {
