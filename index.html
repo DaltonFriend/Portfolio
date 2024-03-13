@@ -107,6 +107,41 @@
 
     <!-- Portfolio -->
 
+    <div class="portfolio" data-aos="zoom-in">
+      <div class="intro_title">
+        <h1 class="black">I've spent the past <span id="js-experience"></span> years working as a product designer, collaborating with world-renowned companies in the healthcare space.</h1>
+        <script>
+                // Counter
+                function countUpExperience(countFrom, id) {
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      timeDifference = (now - countFrom);
+    
+  var secondsInADay = 60 * 60 * 24,
+      secondsInAYear = secondsInADay * 365;
+    
+  var years = Math.floor(timeDifference / (secondsInAYear * 1000));
+  var daysLeft = Math.floor((timeDifference % (secondsInAYear * 1000)) / (secondsInADay * 1000));
+  var hours = Math.floor((timeDifference % (secondsInADay * 1000)) / (60 * 60 * 1000));
+  var mins = Math.floor((timeDifference % (60 * 60 * 1000)) / (60 * 1000));
+  var secs = Math.floor((timeDifference % (60 * 1000)) / 1000);
+
+  document.getElementById(id).innerHTML = years + " years, " + daysLeft + " days, " + hours + " hours, " + mins + " mins, " + secs + " secs";
+
+  clearTimeout(countUpExperience.interval);
+  countUpExperience.interval = setTimeout(function(){ countUpExperience(countFrom, id); }, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  countUpExperience('2021-01-01T00:00:00Z', 'js-experience');
+});
+        </script>
+        
+        <br>
+        <h1 class="dark-grey">Below is a brief look into some of my past work.</h1>
+      </div>
+      </div>
+
     <!-- Novo Nordisk -->
 
     <div class="portfolio" data-aos="zoom-in">

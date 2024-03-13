@@ -128,10 +128,6 @@ document.getElementById('linkedin-profile').addEventListener('click', function(e
 
 // Wobble
 
-
-
-
-
 const image = document.getElementById("logo_only");
 
 image.addEventListener("click", () => {
