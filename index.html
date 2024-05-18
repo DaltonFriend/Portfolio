@@ -111,32 +111,44 @@
 
     <div class="portfolio" data-aos="zoom-in">
       <div class="intro_title">
-        <h1 class="black">I've spent the past <span id="js-experience"></span> working as a product designer, collaborating with world-renowned companies in the healthcare space.</h1>
+        <h1 class="black">I've spent the past <span id="counter"></span> years working as a product designer, collaborating with world-renowned companies in the healthcare space.</h1>
         <script>
                 // Counter
-                function countUpExperience(countFrom, id) {
-  countFrom = new Date(countFrom).getTime();
-  var now = new Date(),
-      timeDifference = (now - countFrom);
-    
-  var secondsInADay = 60 * 60 * 24,
-      secondsInAYear = secondsInADay * 365;
-    
-  var years = Math.floor(timeDifference / (secondsInAYear * 1000));
-  var daysLeft = Math.floor((timeDifference % (secondsInAYear * 1000)) / (secondsInADay * 1000));
-  var hours = Math.floor((timeDifference % (secondsInADay * 1000)) / (60 * 60 * 1000));
-  var mins = Math.floor((timeDifference % (60 * 60 * 1000)) / (60 * 1000));
-  var secs = Math.floor((timeDifference % (60 * 1000)) / 1000);
+                function createCounter() {
+  // Set the starting date and time
+  const startTime = new Date(2021, 0, 1);
 
-  document.getElementById(id).innerHTML = years + " years, " + daysLeft + " days, " + hours + " hours, " + mins + " mins, " + secs + " secs";
+  // Get the current date and time
+  const currentTime = new Date();
 
-  clearTimeout(countUpExperience.interval);
-  countUpExperience.interval = setTimeout(function(){ countUpExperience(countFrom, id); }, 1000);
+  // Calculate the difference between current time and start time
+  const timeElapsed = currentTime - startTime;
+
+  // Extract individual units (years, months, days, hours, minutes, seconds)
+  const years = Math.floor(timeElapsed / (1000 * 60 * 60 * 24 * 365));
+  const months = Math.floor((timeElapsed % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+  const days = Math.floor((timeElapsed % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeElapsed % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((timeElapsed % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeElapsed % (1000 * 60)) / 1000);
+
+  // Helper function to pad numbers with leading zero if they are less than 10
+  const padWithZero = (num) => (num < 10 ? `0${num}` : num);
+
+  // Return the counter string in the format "YYYY,MM,DD,HH,MM,SS"
+  return `${years},${months}${padWithZero(days)}${padWithZero(hours)}${padWithZero(minutes)}${padWithZero(seconds)}`;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  countUpExperience('2021-01-01T00:00:00Z', 'js-experience');
-});
+const counterElement = document.getElementById("counter");
+
+// Update the counter element every second with a separate function
+const updateCounter = () => {
+  const counterValue = createCounter();
+  counterElement.textContent = counterValue;
+};
+
+setInterval(updateCounter, 1000);
+
         </script>
         
         <br>

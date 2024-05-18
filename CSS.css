@@ -178,6 +178,13 @@ p.dark-grey {
   color: var(--dark-grey);
 }
 
+#counter {
+  display: inline-block;
+  width: 264px; /* Set a fixed width for the counter */
+  
+
+}
+
 /* Header */
 
 .header_main {
