@@ -182,7 +182,7 @@ p.dark-grey {
   display: inline-block;
   width: 265px; /* Set a fixed width for the counter */
   text-align: left;
-
+  padding-right: 1px;
   padding-left: 1px;
 
 }
