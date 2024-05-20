@@ -181,8 +181,7 @@ p.dark-grey {
 #counter {
   display: inline-block;
   width: 265px; /* Set a fixed width for the counter */
-  text-align: left;
-  padding-right: 1px;
+  text-align: center;
   padding-left: 1px;
 
 }
