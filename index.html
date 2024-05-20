@@ -136,7 +136,7 @@
   const padWithZero = (num) => (num < 10 ? `0${num}` : num);
 
   // Return the counter string in the format "YYYY,MM,DD,HH,MM,SS"
-  return `${years},${months}${padWithZero(days)}${padWithZero(hours)}${padWithZero(minutes)}${padWithZero(seconds)}`;
+  return `${years}.${months}${padWithZero(days)}${padWithZero(hours)}${padWithZero(minutes)}${padWithZero(seconds)}`;
 }
 
 const counterElement = document.getElementById("counter");
