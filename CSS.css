@@ -286,21 +286,6 @@ button:hover {
   object-fit: cover;
 }
 
-.created_by_profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  object-fit: cover;
-}
-
-.profile_pictures {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-}
-
 .image_only {
   border-radius: 40px;
   max-width: 100%;
@@ -359,19 +344,28 @@ button:hover {
   gap: 16px;
 }
 
+.profile_pictures {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
 .created_by_profile {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  width: auto;
-  gap: 16px;
+  align-items: center;
+  gap: 12px;
+  object-fit: cover;
+  padding: 4px 12px 4px 4px;
+  background-color: var(--warm-grey);
+  border-radius: 100px;
 }
 
-.created_by_profile img {
+.created_by_profile {
   transition: transform 0.4s ease-in-out; /* Define transition properties */
 }
 
-.created_by_profile img:hover {
+.created_by_profile:hover {
   transform: translateY(-8px); /* Move up -8px on hover */
 }
 

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const items = document.querySelectorAll(
-    " img, video, .social_container, button"
+    ".created_by_profile, img, video, .social_container, button"
   );
 
   items.forEach((item) => {
